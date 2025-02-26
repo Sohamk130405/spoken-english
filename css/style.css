@@ -9973,3 +9973,21 @@ h6,
   object-fit: cover;
   border-radius: 10px;
 }
+
+.team-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-item img {
+  height: 300px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.bg-light {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
