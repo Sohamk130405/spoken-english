@@ -97,13 +97,13 @@
   @return map-get($grays, $key);
 }
 
-// Request a theme color level
-@function theme-color-level($color-name: "primary", $level: 0) {
+// Request a theme color courses
+@function theme-color-courses($color-name: "primary", $courses: 0) {
   $color: theme-color($color-name);
-  $color-base: if($level > 0, $black, $white);
-  $level: abs($level);
+  $color-base: if($courses > 0, $black, $white);
+  $courses: abs($courses);
 
-  @return mix($color-base, $color, $level * $theme-color-interval);
+  @return mix($color-base, $color, $courses * $theme-color-interval);
 }
 
 // Return valid calc
